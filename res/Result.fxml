@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.ResultController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <left>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="home" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover">
+                     <image>
+                        <Image url="@to_home.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="20.0" top="130.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="replay" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover">
+                     <image>
+                        <Image url="@replay.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets right="20.0" top="130.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <StackPane BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@end_window.png" />
+                     </image>
+                  </ImageView>
+                  <VBox>
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="Player" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="12.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="scoreLabel" text="SCORE: 0" textFill="#ffff8f">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="15.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="250.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <ImageView fx:id="resultView" fitHeight="210.4" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@lose_sign.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

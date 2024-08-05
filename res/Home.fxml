@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.HomeController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+         <left>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover">
+                     <image>
+                        <Image url="@facebook.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover">
+                     <image>
+                        <Image url="@instagram.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover">
+                     <image>
+                        <Image url="@youtube.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover">
+                     <image>
+                        <Image url="@email.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </left>
+         <right>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitWidth="70.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover">
+                     <image>
+                        <Image url="@home_setting.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitWidth="70.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover">
+                     <image>
+                        <Image url="@credit.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitWidth="70.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover">
+                     <image>
+                        <Image url="@rate.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </padding>
+            </VBox>
+         </right>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <ImageView fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@logo.png" />
+                           </image>
+                        </ImageView>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" />
+                        <ImageView fx:id="map1" fitWidth="290.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover">
+                           <image>
+                              <Image url="@maze1.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" />
+                        <ImageView fx:id="map2" fitWidth="290.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@maze2.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                        <ImageView fx:id="map3" fitWidth="290.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@maze3.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <ImageView fx:id="map4" fitWidth="290.0" pickOnBounds="true" preserveRatio="true" styleClass="image-hover" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@maze4.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </GridPane>
+               </children>
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

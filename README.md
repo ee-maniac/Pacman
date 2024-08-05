@@ -3,7 +3,7 @@
 SUT Department of Electrical Engineering OOP exercise
 
 ## Overview
-Developed as part of the object oriented programming (OOP) course at Sharif University of Technology (SUT) in early 2024, the game showcases fundamental object oriented programming concepts through an interactive graphical interface.
+Developed as part of the object oriented programming (OOP) course at Sharif University of Technology (SUT) in mid 2024, the game showcases fundamental object oriented programming concepts through an interactive graphical interface.
 
 ## Getting Started
 
